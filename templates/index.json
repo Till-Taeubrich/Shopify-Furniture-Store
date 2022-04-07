@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "rich_text": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "rich_text"
+  ]
+}
