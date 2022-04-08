@@ -100,17 +100,17 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "e61d4f65-bba3-4074-b232-8d8675ea4de0": {
+          "announcement-bar-0": {
             "type": "announcement",
             "settings": {
               "text": "Welcome to our store",
-              "color_scheme": "background-2",
+              "color_scheme": "background-1",
               "link": ""
             }
           }
         },
         "block_order": [
-          "e61d4f65-bba3-4074-b232-8d8675ea4de0"
+          "announcement-bar-0"
         ],
         "settings": {
         }
@@ -133,37 +133,29 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "HFFE",
+              "heading": "Quick links",
               "menu": "footer"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "Get Help",
+              "heading": "Info",
               "menu": "footer"
             }
           },
-          "2403d20d-7b59-4a49-bc13-52fde0b724ca": {
-            "type": "link_list",
+          "footer-2": {
+            "type": "text",
             "settings": {
-              "heading": "Popolar Categories",
-              "menu": "footer"
-            }
-          },
-          "46c6c84f-ed91-4dbb-82a6-3ce1f1dc8df7": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Let's stay in touch",
-              "menu": "footer"
+              "heading": "Our mission",
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
             }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "2403d20d-7b59-4a49-bc13-52fde0b724ca",
-          "46c6c84f-ed91-4dbb-82a6-3ce1f1dc8df7"
+          "footer-2"
         ],
         "settings": {
           "color_scheme": "background-1",
@@ -191,10 +183,7 @@
           "color_scheme": "background-1"
         }
       }
-    },
-    "content_for_index": [
-
-    ]
+    }
   },
   "presets": {
     "Default": {
