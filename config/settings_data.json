@@ -99,19 +99,6 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "background-1",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "announcement-bar-0"
-        ],
         "settings": {
         }
       },
@@ -133,29 +120,29 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "HFFE.",
               "menu": "footer"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
+              "heading": "Get Help",
               "menu": "footer"
             }
           },
-          "footer-2": {
-            "type": "text",
+          "f69334da-0a53-410f-8716-605b08576a37": {
+            "type": "link_list",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "Popular Categories",
+              "menu": "footer"
             }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "footer-2"
+          "f69334da-0a53-410f-8716-605b08576a37"
         ],
         "settings": {
           "color_scheme": "background-1",
@@ -183,7 +170,10 @@
           "color_scheme": "background-1"
         }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {

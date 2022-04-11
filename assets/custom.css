@@ -1,0 +1,28 @@
+.announcement-bar {
+  color: white;
+  background-color: #33363b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.announcement-infos {
+  display: flex;
+}
+
+.announcement-infos > * {
+  margin-left: 3rem;
+}
+
+.link {
+  color: white;
+  margin-right: 2.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.login:hover {
+  text-decoration: underline;
+}
