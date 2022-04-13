@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="{{ 'custom.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -353,7 +354,7 @@
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
           {%- else -%}
-            <span class="h2">{{ shop.name }}</span>
+            <span class="h2 shop-name">HFFE</span>
           {%- endif -%}
         </a>
     {%- if request.page_type == 'index' -%}
@@ -519,8 +520,9 @@
           </div>
         {%- endif -%}
       </a>
+      <div>{{cart.total__pric}}</div>
+    </header>
     </div>
-  </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
 {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}

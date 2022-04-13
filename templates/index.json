@@ -3,24 +3,31 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
+        "9db2712a-1995-4cc7-a8a7-91a2f6c3cd9c": {
+          "type": "text",
+          "settings": {
+            "text": "Quick parcel delivery,",
+            "text_style": "subtitle"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Get used to better entertaining",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "Holiday shopping with 3% back in rewards. Offer expires 12\/31\/2018.",
+            "text_style": "subtitle"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "Start Shopping",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
@@ -30,25 +37,33 @@
         }
       },
       "block_order": [
+        "9db2712a-1995-4cc7-a8a7-91a2f6c3cd9c",
         "heading",
         "text",
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image": "shopify:\/\/shop_images\/st_demo1_003-min.jpg",
+        "image_overlay_opacity": 10,
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
+    "1649813538f21e7b2a": {
+      "type": "bullet-columns",
+      "settings": {
+      }
+    },
     "rich_text": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -77,6 +92,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -97,6 +113,7 @@
     },
     "collage": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "collection-0": {
           "type": "collection",
@@ -135,6 +152,7 @@
     },
     "video": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -148,6 +166,7 @@
     },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column1": {
           "type": "column",
@@ -202,6 +221,7 @@
   },
   "order": [
     "image_banner",
+    "1649813538f21e7b2a",
     "rich_text",
     "featured_collection",
     "collage",

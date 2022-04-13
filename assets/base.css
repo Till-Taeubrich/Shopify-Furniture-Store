@@ -1194,9 +1194,9 @@ summary::-webkit-details-marker {
   max-width: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 25%;
   height: 100%;
-  width: 100%;
+  width: 90%;
 }
 
 .media > img {
@@ -2226,7 +2226,6 @@ input[type='checkbox'] {
 
   .header--middle-left {
     grid-template-areas: 'heading navigation icons';
-    grid-template-columns: auto auto 1fr;
     column-gap: 2rem;
   }
 
@@ -2543,6 +2542,7 @@ details[open] > .header__icon--menu .icon-hamburger {
   margin-left: -1.2rem;
   grid-area: navigation;
   display: none;
+  justify-self: end;
 }
 
 .header--top-center .header__inline-menu,

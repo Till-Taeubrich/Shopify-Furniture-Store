@@ -21,7 +21,7 @@
     </div>
 
     {%- if shop.customer_accounts_enabled -%}
-      <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="login link">
+      <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="login announcement-link">
         {%- liquid
           if customer
             echo 'customer.account_fallback' | t

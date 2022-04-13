@@ -100,6 +100,10 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
+          "phone": "+4.509.120.6705 (9AM-6PM EST)",
+          "shipping": "Free Shipping On All U.S. Orders",
+          "giftcard": "Gift Cards",
+          "login": ""
         }
       },
       "header": {
