@@ -168,11 +168,6 @@
 
 /* collection list */
 
-#Slider-template--15579679981747__16498234933a9f7611 {
- height: 100%;
- overflow: hidden;
-}
-
 .color-background-1.gradient > .collection-list-wrapper {
   margin: 2.5rem;
   padding: 0;
@@ -205,6 +200,7 @@ position: absolute;
 top: 3%;
 left: 8%;
 }
+
 
 .collection-list-wrapper.page-width.isolate.no-heading.no-mobile-link.section-template--15579679981747__16498234933a9f7611-padding {
   margin: auto;
