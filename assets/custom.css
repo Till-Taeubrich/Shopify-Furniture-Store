@@ -127,11 +127,13 @@
   border-radius: 4px;
 }
 
+/* bullet-columns */
 .bullets-columns {
   display: flex;
   justify-content: space-between;
   gap: 10rem;
-  margin-top: 7rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   gap: 2rem;
 }
 
@@ -139,6 +141,7 @@
   display: flex;
   gap: 1.5rem;
   flex-basis: 25%;
+  justify-content: center;
 }
 
 .bullet-icon {
@@ -160,4 +163,31 @@
 
 .bullet-description {
   font-size: 1.7rem;
+}
+
+/* collection list */
+
+.color-background-1.gradient > .collection-list-wrapper {
+  margin: 2.5rem;
+  padding: 0;
+}
+
+.card__media .media > :not(.zoom):not(.deferred-media__poster-button){
+  position: static;
+  width: 100%;
+}
+
+.card__content {
+  position: absolute;
+  bottom: 15%;
+  left: 8%;
+}
+
+.section-name {
+font-size: 2.3rem;
+font-weight: bold;
+color: #000;
+position: absolute;
+top: 3%;
+left: 8%;
 }

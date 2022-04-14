@@ -103,7 +103,7 @@
           "phone": "+4.509.120.6705 (9AM-6PM EST)",
           "shipping": "Free Shipping On All U.S. Orders",
           "giftcard": "Gift Cards",
-          "login": ""
+          "login": "shopify:\/\/pages\/contact"
         }
       },
       "header": {
@@ -278,24 +278,6 @@
       "predictive_search_show_price": false,
       "currency_code_enabled": true,
       "sections": {
-        "announcement-bar": {
-          "type": "announcement-bar",
-          "blocks": {
-            "announcement-bar-0": {
-              "type": "announcement",
-              "settings": {
-                "text": "Welcome to our store",
-                "color_scheme": "background-1",
-                "link": ""
-              }
-            }
-          },
-          "block_order": [
-            "announcement-bar-0"
-          ],
-          "settings": {
-          }
-        },
         "header": {
           "type": "header",
           "settings": {

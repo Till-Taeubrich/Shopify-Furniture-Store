@@ -11,6 +11,7 @@
     {% render 'card-collection' %}
 {% endcomment %}
 
+{{ 'customs.css' | asset_url | stylesheet_tag }}
 {%- liquid
   assign ratio = 1
   if card_collection.featured_image and media_aspect_ratio == 'portrait'
@@ -23,7 +24,7 @@
   endif
 -%}
 
-<div class="card-wrapper animate-arrow">
+<div class="container card-wrapper animate-arrow">
   <div class="card
     card--{{ settings.card_style }}
     {% if card_collection.featured_image %} card--media{% else %} card--text{% endif %}
@@ -80,16 +81,16 @@
       </div>
     </div>
     {% if settings.card_style == 'card' or card_collection.featured_image %} 
-      <div class="card__content">
+    {% if card_collection.title %}
+    <div class="section-name">{{ card_collection.title | escape }}</div>
+    {% endif %}
+    <div class="card__content">
+      <div class="card-content">
+      </div>
         <div class="card__information">
           <h3 class="card__heading">
-            <a href="{{ card_collection.url }}" class="full-unstyled-link">
-              {%- if card_collection.title != blank -%}
-                {{- card_collection.title | escape -}}
-              {%- else -%}
-                {{ 'onboarding.collection_title' | t }}
-              {%- endif -%}
-              {%- if card_collection.featured_image or card_collection.description == blank -%}<span class="icon-wrap">{% render 'icon-arrow' %}</span>{% endif %}
+            <a href="{{ card_collection.url }}" class="full-unstyled-link"><b>Shop products</b>
+              <span class="icon-wrap">{% render 'icon-arrow' %}</span>
             </a>
           </h3>
           {%- if card_collection.featured_image == nil and card_collection.description != blank -%}
