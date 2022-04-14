@@ -3,6 +3,7 @@
   --dark-grey: #33363b;
   --dark-grey-filter: invert(18%) sepia(6%) saturate(880%) hue-rotate(179deg) brightness(88%) contrast(85%);
   --gold: #b79b6c;
+  --transition: 0.3s;
 }
 
 .container {
@@ -48,7 +49,7 @@
   color: var(--dark-grey);
   font-size: 2.5rem;
   font-weight: bold;
-  transition: color 0.5s;
+  transition: color var(--transition);
 }
 
 .shop-name:hover {
@@ -88,7 +89,7 @@
 }
 
 .banner__box .banner__buttons a{
-  transition: background-color 0.5s;
+  transition: background-color var(--transition);
 }
 
 .banner__box .banner__buttons a:hover{
@@ -167,6 +168,11 @@
 
 /* collection list */
 
+#Slider-template--15579679981747__16498234933a9f7611 {
+ height: 100%;
+ overflow: hidden;
+}
+
 .color-background-1.gradient > .collection-list-wrapper {
   margin: 2.5rem;
   padding: 0;
@@ -183,6 +189,14 @@
   left: 8%;
 }
 
+.card__heading:hover {
+  transition: color var(--transition);
+}
+
+.card__heading:hover {
+  color: var(--gold);
+}
+
 .section-name {
 font-size: 2.3rem;
 font-weight: bold;
@@ -190,4 +204,66 @@ color: #000;
 position: absolute;
 top: 3%;
 left: 8%;
+}
+
+.collection-list-wrapper.page-width.isolate.no-heading.no-mobile-link.section-template--15579679981747__16498234933a9f7611-padding {
+  margin: auto;
+}
+
+/* rewards-section */
+.rewards-section {
+  display: flex;
+  gap: 5.5rem;
+  margin-top: 3rem;
+}
+
+.rewards,
+.loyalty-program {
+  flex-basis: 50%;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  padding: 5% 0;
+}
+
+.rewards {
+  background-image: url(./background-rewards.jpg);
+}
+
+.loyalty-program {
+  background-color: #e7d8d6;
+}
+
+.eyebrow-copy {
+  color: var(--dark-grey);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.headline {
+  font-size: 3rem;
+  color: #000;
+}
+
+.sub-headline {
+
+}
+
+.cta-btn {
+	border: none;
+	padding: 1em 2em;
+  border-radius: 4px;
+  margin-top: 2rem;
+  color: white;
+	background-color: black;
+  font-weight: bold;
+  transition: background-color var(--transition);
+}
+
+.cta-btn:hover {
+	background-color: var(--gold);
+}
+
+.cta-btn:active {
+	transform: scale(0.98);
 }
