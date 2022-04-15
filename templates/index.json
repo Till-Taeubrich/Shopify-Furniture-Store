@@ -105,12 +105,27 @@
       "type": "rewards",
       "settings": {
       }
+    },
+    "164999958104b1f6ef": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/st_demo5_005-min.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "image_banner",
     "1649813538f21e7b2a",
     "16498234933a9f7611",
-    "1649912389def3a5c1"
+    "1649912389def3a5c1",
+    "164999958104b1f6ef"
   ]
 }
