@@ -274,7 +274,7 @@ left: 8%;
 .textbox {
   position: absolute;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.60);
+  background-color: rgba(255, 255, 255, 0.30);
   top: 50%;
   left: 5%;
   transform: translateY(-50%);
@@ -282,10 +282,17 @@ left: 8%;
   width: 45rem;
   color: var(--dark-grey);
   overflow: hidden;
+  height: 42rem;
 }
 
 .textbox > .headline-text {
   font-weight: bold;
+}
+
+.box-one{
+  height: 6rem;
+  overflow: hidden;
+  transition: height 1s;
 }
 
 .box-one,
@@ -298,6 +305,7 @@ left: 8%;
 .box-two > .header {
   display: flex; justify-content: space-between;
   background-color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
   color: var(--dark-grey);
   padding: 1rem 2rem;
 }
@@ -325,5 +333,4 @@ left: 8%;
 
 .box-one.active {
   height: auto;
-  overflow: hidden;
 }
