@@ -210,7 +210,7 @@ left: 8%;
 .rewards-section {
   display: flex;
   gap: 5.5rem;
-  margin-top: 3rem;
+  margin-top: 8.5rem;
 }
 
 .rewards,
@@ -276,7 +276,7 @@ left: 8%;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.30);
   top: 50%;
-  left: 5%;
+  left: 5.5%;
   transform: translateY(-50%);
   padding: 4rem;
   width: 45rem;
@@ -292,13 +292,12 @@ left: 8%;
 .box-one{
   height: 6rem;
   overflow: hidden;
-  transition: height 1s;
+  transition: height 0.5s;
 }
 
 .box-one,
 .box-two {
   margin-top: 2rem;
-  transition: 1s;
 }
 
 .box-one > .header,
@@ -324,6 +323,9 @@ left: 8%;
 .box-one .header .indicator,
 .box-two .header .indicator {
   font-size: 2rem;
+  text-align: center;
+  width: 1rem;
+  font-weight: bold;
 }
 
 .box-one > .textblock,
@@ -332,5 +334,18 @@ left: 8%;
 }
 
 .box-one.active {
-  height: auto;
+  height: 16rem;
+}
+
+.deferred-media__poster-button.motion-reduce {
+  background-color: #767676;
+  transition: background-color 0.2s;
+}
+
+.deferred-media__poster-button.motion-reduce:hover {
+  background-color: #f22320;
+}
+
+.icon-play > path{
+  color: white;
 }
