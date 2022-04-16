@@ -15,8 +15,28 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="container color-{{ section.settings.color_scheme }} gradient">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
+    <div class="textbox">
+      <div class="headline">Space & stock for designs.</div>
+    <div class="sub-headline">Start this <b>journey with</b> the efficient weather is amazing, walk with me through the pathway.</div>
+      <div class="extending-box">
+        <div class="box-one active">
+          <div class="header">
+            <div class="headline-text">Secure payments</div>
+            <div class="indicator">-</div>
+          </div>
+          <div class="textblock">Neque congue condimentum dolor fermentum blandit euismod sit senectus aenean sodales imperdiet aliquet</div>
+        </div>
+        <div class="box-two">
+          <div class="header">
+            <div class="headline-text">Fast delivery</div>
+            <div class="indicator">+</div>
+          </div>
+          <div class="textblock">Neque congue condimentum dolor fermentum blandit euismod sit senectus aenean sodales imperdiet aliquet</div>
+        </div>
+      </div>
+    </div>
     <div{% if section.settings.full_width %} class="page-width"{% endif %}>
       {%- unless section.settings.heading == blank -%}
         <div class="title-wrapper title-wrapper--no-top-margin">
@@ -99,7 +119,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.video.name",
+  "name": "Video-Section",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -213,7 +233,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.video.presets.name"
+      "name": "Video-Section"
     }
   ]
 }
