@@ -40,7 +40,7 @@
     "inputs_shadow_horizontal_offset": 0,
     "inputs_shadow_vertical_offset": 4,
     "inputs_shadow_blur": 5,
-    "card_style": "card",
+    "card_style": "standard",
     "card_image_padding": 0,
     "card_text_alignment": "left",
     "card_color_scheme": "background-2",
@@ -95,7 +95,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "currency_code_enabled": true,
+    "currency_code_enabled": false,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
