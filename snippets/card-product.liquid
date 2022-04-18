@@ -79,6 +79,10 @@
             </div>
           </div>
         {%- endif -%}
+        <div class="product-buttons">
+          <button class="save btn">Save</button>
+          <a href="{{ card_product.url }}"><button class="quickview btn">View</button></a>
+        </div>
         <div class="card__content">
           <div class="card__information">
             <h3 class="card__heading">
@@ -91,7 +95,7 @@
             {%- if card_product.available == false -%}
               <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
-              <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">{{ 'products.product.on_sale' | t }}</span>
+              <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">SALE</span>
             {%- endif -%}
           </div>
         </div>
@@ -131,9 +135,8 @@
                 <span aria-hidden="true">({{ card_product.metafields.reviews.rating_count }})</span>
                 <span class="visually-hidden">{{ card_product.metafields.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
               </p>
-            {%- endif -%}
-
-            {% render 'price', product: card_product, price_class: '' %}
+              {%- endif -%}
+              {% render 'price', product: card_product, price_class: '' %}
           </div>
         </div>
         <div class="card__badge {{ settings.badge_position }}">
