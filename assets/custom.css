@@ -61,6 +61,10 @@
   color: var(--gold);
 }
 
+.header__active-menu-item {
+  font-weight: bold;
+}
+
 /* image-banner */
 .banner__content {
   padding-left: 0;
@@ -96,8 +100,16 @@
   background-color: var(--gold);
 }
 
+.banner__text.subtitle {
+  margin-top: 0;
+}
 
-.content-container:first-child > :first-child:after {
+.banner__text.subtitle:first-child{
+  font-weight: bold;
+}
+
+
+.banner__text.subtitle:first-child:after {
   content: 'from $25';
   color: var(--gold);
 }
@@ -167,6 +179,10 @@
 }
 
 /* collection list */
+
+.collection {
+  margin-bottom: 0;
+}
 
 .color-background-1.gradient > .collection-list-wrapper {
   margin: 2.5rem;
@@ -393,9 +409,6 @@ left: 8%;
   background-color: var(--gold);
   border: none;
   border-radius: 4px;
-  position: absolute;
-  top: 25px;
-  left: 25px;
   font-weight: bold;
   font-size: 0.9em;
   padding: 0.5rem 1.1rem;
@@ -442,4 +455,44 @@ left: 8%;
 .save.btn:active,
 .quickview.btn:active {
 	transform: scale(0.98);
+}
+
+/* email-banner */
+.email-area {
+  background-image: url('/assets/email-background.jpg');
+  padding: 8rem;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.email-area .field_input {
+  border-radius: 4px;
+}
+
+.newsletter {
+  width: 60rem;
+  margin: auto;
+  background-color: #fefefd;
+}
+
+.email-area h2{
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.email-area p{
+  color: black;
+}
+
+.email-area .privacy-text {
+  margin-top: 3rem;
+}
+
+#Subscribe {
+  background-color: black;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 12rem;
 }
