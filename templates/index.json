@@ -20,7 +20,14 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "Holiday shopping with 3% back in rewards. Offer expires 12\/31\/2018.",
+            "text": "Holiday shopping with 3% back in rewards.",
+            "text_style": "subtitle"
+          }
+        },
+        "faa9a1f1-89a9-4285-b0c1-5efe8a5503ba": {
+          "type": "text",
+          "settings": {
+            "text": "Offer expires 12\/31\/2018.",
             "text_style": "subtitle"
           }
         },
@@ -40,6 +47,7 @@
         "9db2712a-1995-4cc7-a8a7-91a2f6c3cd9c",
         "heading",
         "text",
+        "faa9a1f1-89a9-4285-b0c1-5efe8a5503ba",
         "button"
       ],
       "settings": {
@@ -139,6 +147,40 @@
         "padding_top": 88,
         "padding_bottom": 36
       }
+    },
+    "16502731066d40dd72": {
+      "type": "newsletter",
+      "blocks": {
+        "16502731066f3ae66e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Let’s stay in touch",
+            "heading_size": "h2"
+          }
+        },
+        "16502731066f3ae66e-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "16502731066f3ae66e-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16502731066f3ae66e-0",
+        "16502731066f3ae66e-1",
+        "16502731066f3ae66e-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -147,6 +189,7 @@
     "16498234933a9f7611",
     "1649912389def3a5c1",
     "164999958104b1f6ef",
-    "16500169001f3e140d"
+    "16500169001f3e140d",
+    "16502731066d40dd72"
   ]
 }
