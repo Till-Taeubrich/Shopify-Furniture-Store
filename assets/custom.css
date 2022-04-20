@@ -45,6 +45,22 @@
 }
 
 /* header */
+header.header {
+  margin-right: 0;
+}
+
+header .header__inline-menu {
+  justify-self: center;
+}
+
+.header .header__menu-item {
+  font-size: 1.6rem;
+}
+
+.header__icons {
+  align-items: center;
+}
+
 .shop-name {
   color: var(--dark-grey);
   font-size: 2.5rem;
@@ -65,17 +81,30 @@
   font-weight: bold;
 }
 
+.price-link {
+  text-decoration: none;
+}
+
+.price {
+  color: #000;
+  margin-left: 2rem;
+}
+
 /* image-banner */
-.banner__content {
+.image-banner-section .banner__content {
   padding-left: 0;
   margin-left: 0;
 }
 
-.banner__box > *{
+.image-banner-section .banner__box {
+  max-width: 50rem !important;
+}
+
+.image-banner-section .banner__box > *{
   color: var(--dark-grey);
 }
 
-.banner__box::before {
+.image-banner-section .banner__box::before {
   content: "";
   position: absolute;
   top: 0; 
@@ -87,47 +116,49 @@
   background-color: #fff;
 }
 
-.banner__box .banner__buttons{
+.image-banner-section .banner__box .banner__buttons{
   background-color: #000;
   border-radius: 4px;
 }
 
-.banner__box .banner__buttons a{
+.image-banner-section .banner__box .banner__buttons a{
   transition: background-color var(--transition);
 }
 
-.banner__box .banner__buttons a:hover{
+.image-banner-section .banner__box .banner__buttons a:hover{
   background-color: var(--gold);
 }
 
-.banner__text.subtitle {
+.image-banner-section .banner__text.subtitle {
   margin-top: 0;
 }
 
-.banner__text.subtitle:first-child{
+.image-banner-section .banner__text.subtitle:first-child{
   font-weight: bold;
 }
 
 
-.banner__text.subtitle:first-child:after {
+.image-banner-section .banner__text.subtitle:first-child:after {
   content: 'from $25';
   color: var(--gold);
 }
 
-.banner::after {
+.image-banner-section .banner::after {
   content: 0;
   background-color: #fff;
 }
 
-.banner__media {
+.image-banner-section .banner__media {
   background-color: #fff;
 }
 
-.banner__content {
+.image-banner-section .banner__content {
   position: relative;
+  background: white;
+  width: 25%;
 }
 
-.product-teaser{
+.image-banner-section .product-teaser{
   z-index: 1;
   background-color: var(--dark-grey);
   color: white;
@@ -190,7 +221,6 @@
 }
 
 .card__media .media > :not(.zoom):not(.deferred-media__poster-button){
-  left: 0;
   width: 100%;
 }
 
@@ -226,7 +256,7 @@ left: 8%;
 .rewards-section {
   display: flex;
   gap: 5.5rem;
-  margin-top: 8.5rem;
+  margin: 2.5rem;
 }
 
 .rewards,
@@ -239,7 +269,7 @@ left: 8%;
 }
 
 .rewards {
-  background-image: url(./background-rewards.jpg);
+  background-image: url('../assets/background-rewards.jpg');
 }
 
 .loyalty-program {
@@ -298,7 +328,7 @@ left: 8%;
   width: 45rem;
   color: var(--dark-grey);
   overflow: hidden;
-  height: 42rem;
+  height: 47rem;
 }
 
 .textbox > .headline-text {
@@ -459,7 +489,7 @@ left: 8%;
 
 /* email-banner */
 .email-area {
-  background-image: url('/assets/email-background.jpg');
+  background-image: url('../assets/email-background.jpg');
   padding: 8rem;
   background-position: center; 
   background-repeat: no-repeat;
@@ -471,7 +501,7 @@ left: 8%;
 }
 
 .newsletter {
-  width: 60rem;
+  max-width: 60rem;
   margin: auto;
   background-color: #fefefd;
 }
@@ -492,7 +522,13 @@ left: 8%;
 #Subscribe {
   background-color: black;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  width: 12rem;
+  width:  25%;
+  border-radius: 0 4px 4px 0;
+}
+
+/* collection-page */
+.collection-site {
+  margin-bottom: 5rem;
 }

@@ -15,6 +15,14 @@
   }
 {%- endstyle -%}
 
+<style>
+    @media screen and (max-width: 998px) {
+      .textbox {
+        display: none;
+      }
+    }
+</style>
+
 <div class="container color-{{ section.settings.color_scheme }} gradient">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     <div class="textbox">

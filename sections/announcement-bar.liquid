@@ -35,6 +35,20 @@
   </div>
     {%- endif -%}
 
+    <style>
+    @media screen and (max-width: 749px) {
+      .announcement-infos{
+        flex-direction: column;
+        border-right: 1px grey dotted;
+      }
+      a.login{
+        flex-shrink: 1;
+        margin-right: 0;
+      }
+    }
+    </style>
+
+
 {% schema %}
 {
   "name": "t:sections.announcement-bar.name",
