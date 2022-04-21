@@ -2,13 +2,87 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "165042188498a35df5": {
+      "type": "rich-text",
+      "blocks": {
+        "165042188404ebf07c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Us",
+            "heading_size": "h1"
+          }
+        },
+        "165042188404ebf07c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Why you should start buy furnitures from Stockie?<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "165042188404ebf07c-0",
+        "165042188404ebf07c-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16504214890790b912": {
+      "type": "multicolumn",
+      "blocks": {
+        "16504214895fa4c874-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>We create unique high-quality furniture since 2016.<br\/><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16504214895fa4c874-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Natoque cras habitant dictum faucibus gravida ultrices litora facilisi senectus vehicula ligula montes sem, leo primis phasellus suscipit integer sapien himenaeos est aptent non fusce congue. Sapien cubilia orci blandit lacus curabitur et erat <\/p><p>maximus fames conubia egestas ultricies nullam adipiscing eros nostra mauris tristique aliquam netus. Adipiscing fusce velit lacinia  <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16504214895fa4c874-0",
+        "16504214895fa4c874-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "165042188498a35df5",
+    "16504214890790b912"
   ]
 }

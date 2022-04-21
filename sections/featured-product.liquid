@@ -19,6 +19,15 @@
   }
 {%- endstyle -%}
 
+<style>
+  @media screen and (max-width: 749px) {
+    .save.btn,
+    .quickview.btn {
+      display: none;
+    }
+  }
+</style>
+
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
 {%- assign product = section.settings.product -%}

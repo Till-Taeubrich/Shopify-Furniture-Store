@@ -519,7 +519,10 @@
           </div>
         {%- endif -%}
       </a>
-      <div>{{cart.total__pric}}</div>
+
+      <a class="price-link" href="{{ routes.cart_url }}">
+        <div class="price">{{cart.total_price | money}}</div>
+      </a>
     </header>
     </div>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>

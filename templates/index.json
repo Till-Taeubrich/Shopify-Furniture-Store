@@ -35,7 +35,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Start Shopping",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify:\/\/collections",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -59,7 +59,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }

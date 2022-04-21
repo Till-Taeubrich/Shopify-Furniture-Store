@@ -15,6 +15,21 @@
   }
 {%- endstyle -%}
 
+<style>
+@media screen and (max-width: 749px) {
+  #Subscribe {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 1rem;
+  }
+  .email-area .privacy-text{
+  margin-top: 7rem;
+  }
+}
+</style>
+
 <div class="email-area">
   <div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
     <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
