@@ -68,12 +68,101 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
-        "column_alignment": "center",
+        "column_alignment": "left",
         "background_style": "none",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16505299335342f093": {
+      "type": "multicolumn",
+      "blocks": {
+        "1650529933c5fcb7ed-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logoipsum-logo-45.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1650529933c5fcb7ed-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logoipsum-logo-43.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1650529933c5fcb7ed-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logoipsum-logo-28.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "df2a3ce4-f3fd-4631-ad1c-a6c158b34269": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logoipsum-logo-40.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "6612a079-847d-4ff9-a8c6-0577bb858f41": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logoipsum-logo-26.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "e11d8109-340f-486d-9f85-30d5421e90ee": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logoipsum-logo-17.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1650529933c5fcb7ed-0",
+        "1650529933c5fcb7ed-1",
+        "1650529933c5fcb7ed-2",
+        "df2a3ce4-f3fd-4631-ad1c-a6c158b34269",
+        "6612a079-847d-4ff9-a8c6-0577bb858f41",
+        "e11d8109-340f-486d-9f85-30d5421e90ee"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -83,6 +172,7 @@
   "order": [
     "main",
     "165042188498a35df5",
-    "16504214890790b912"
+    "16504214890790b912",
+    "16505299335342f093"
   ]
 }

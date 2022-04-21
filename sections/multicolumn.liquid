@@ -16,6 +16,23 @@
   }
 {%- endstyle -%}
 
+<style>
+img {
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(234deg) brightness(96%) contrast(107%);
+  -webkit-filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(234deg) brightness(96%) contrast(107%);
+}
+
+img:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+
+/* img {
+  filter: sepia(100%);
+  -webkit-filter: sepia(100%);
+} */
+</style>
+
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
