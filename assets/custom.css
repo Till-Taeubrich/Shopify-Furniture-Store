@@ -96,6 +96,10 @@ header .header__inline-menu {
   margin-left: 0;
 }
 
+.image-banner-section .hero-img {
+  width: 100% !important;
+}
+
 .image-banner-section .banner__box {
   max-width: 50rem !important;
 }
