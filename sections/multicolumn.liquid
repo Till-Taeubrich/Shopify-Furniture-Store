@@ -16,6 +16,44 @@
   }
 {%- endstyle -%}
 
+<style>
+  /* about us body */
+  
+  #shopify-section-template--15579680047283__16504214890790b912 .page-width li {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  #shopify-section-template--15579680047283__16504214890790b912 ul li:first-child p{
+    font-size: 4.2rem;
+    margin-right: 15rem;
+    color: black;
+    font-weight: bold;
+  }
+
+  #shopify-section-template--15579680047283__16504214890790b912 ul li:first-child p::after{
+    content: ' since 2016';
+    color: #b79b6c;
+  }
+
+  #shopify-section-template--15579680047283__16504214890790b912 ul li:last-child{
+    font-size: 1.7rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  /* logo-section */
+  #shopify-section-template--15579680047283__16505299335342f093 img {
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(234deg) brightness(96%) contrast(107%);
+    -webkit-filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(234deg) brightness(96%) contrast(107%);
+  }
+
+  #shopify-section-template--15579680047283__16505299335342f093 img:hover {
+    filter: none;
+    -webkit-filter: none;
+  }
+</style>
+
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false

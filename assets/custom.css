@@ -536,3 +536,64 @@ left: 8%;
 .collection-site {
   margin-bottom: 5rem;
 }
+
+/* about us */
+
+.carousel-area{
+  background-color: #f8f8f8;
+}
+
+.carousel{
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+  margin-bottom: 0;
+}
+
+.carousel .header{
+  font-weight: bold;
+  font-size: 3rem;
+  color: black;
+  grid-template-columns: none;
+  padding-bottom: 0;
+}
+
+.carousel .subheader{
+  font-size: 2rem;
+  font-weight: bold; 
+  color: #000;
+}
+
+.carousel .testimonial-area{
+  flex-basis: 65%;
+}
+
+.carousel .img {
+  align-self: center;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel .main-carousel{
+  margin: 5rem 0;
+}
+
+.carousel .main-carousel .carousel-cell {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.carousel .main-carousel .carousel-cell .testimonial {
+  width: 80%;
+  margin: auto;
+  font-size: 2em;
+}
+
+.carousel .main-carousel .carousel-cell .testimonial .customer {
+  text-align: end;
+  font-style: italic;
+}
