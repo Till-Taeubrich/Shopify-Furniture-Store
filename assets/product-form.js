@@ -33,6 +33,8 @@ if (!customElements.get('product-form')) {
       fetch(`${routes.cart_add_url}`, config)
         .then((response) => response.json())
         .then((response) => {
+          console.log(response.final_line_price.toFixed(2));
+          updateTotalPrice(response.final_line_price)
           if (response.status) {
             this.handleErrorMessage(response.description);
             return;
@@ -61,4 +63,9 @@ if (!customElements.get('product-form')) {
       }
     }
   });
+}
+
+function updateTotalPrice(price){
+  const priceDisplay = document.querySelector('.price-link').children[0];
+  priceDisplay.textContent = '$' + (price / 100).toFixed(2);
 }
