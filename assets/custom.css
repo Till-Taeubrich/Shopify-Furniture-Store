@@ -40,7 +40,7 @@
   font-size: 1.5rem;
 }
 
-.login:hover {
+.announcement-bar .login:hover {
   text-decoration: underline;
 }
 
@@ -222,6 +222,8 @@ header .header__inline-menu {
 .color-background-1.gradient > .collection-list-wrapper {
   margin: 2.5rem;
   padding: 0;
+  margin: auto;
+  min-width: 100%;
 }
 
 .card__media .media > :not(.zoom):not(.deferred-media__poster-button){
@@ -274,6 +276,7 @@ left: 8%;
 
 .rewards {
   background-image: url('../assets/background-rewards.jpg');
+  background-size: cover;
 }
 
 .loyalty-program {
@@ -590,10 +593,14 @@ left: 8%;
 .carousel .main-carousel .carousel-cell .testimonial {
   width: 80%;
   margin: auto;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .carousel .main-carousel .carousel-cell .testimonial .customer {
   text-align: end;
   font-style: italic;
+}
+
+.flickity-prev-next-button.previous {
+  left: 0 !important;
 }

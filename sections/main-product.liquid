@@ -22,6 +22,12 @@
   }
 {%- endstyle -%}
 
+<style>
+  .single-product-section img {
+    width: 100% !important;
+  }
+</style>
+
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
@@ -645,7 +651,7 @@
 {
   "name": "t:sections.main-product.name",
   "tag": "section",
-  "class": "section",
+  "class": "section single-product-section",
   "blocks": [
     {
       "type": "@app"

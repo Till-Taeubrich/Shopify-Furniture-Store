@@ -71,6 +71,7 @@ class CartItems extends HTMLElement {
       })
       .then((state) => {
         const parsedState = JSON.parse(state);
+        updateTotalPrice(parsedState.total_price);
         this.classList.toggle('is-empty', parsedState.item_count === 0);
         const cartFooter = document.getElementById('main-cart-footer');
 
@@ -135,3 +136,8 @@ class CartItems extends HTMLElement {
 }
 
 customElements.define('cart-items', CartItems);
+
+function updateTotalPrice(price){
+  const priceDisplay = document.querySelector('.price-link').children[0];
+  priceDisplay.textContent = '$' + (price / 100).toFixed(2);
+}

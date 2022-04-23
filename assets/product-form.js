@@ -39,6 +39,7 @@ if (!customElements.get('product-form')) {
           }
 
           this.cartNotification.renderContents(response);
+          fetchCart()
         })
         .catch((e) => {
           console.error(e);
@@ -61,4 +62,22 @@ if (!customElements.get('product-form')) {
       }
     }
   });
+}
+
+function updateTotalPrice(totalPrice){
+  const priceDisplay = document.querySelector('.price-link').children[0];
+
+  priceDisplay.textContent = `$${totalPrice}`;
+}
+
+function fetchCart(){
+  fetch('/cart.js')
+  .then((response) => {
+    return response.text();
+  })
+  .then(cart=>{
+    const data = JSON.parse(cart).total_price;
+    const totalPrice = (data / 100).toFixed(2);
+    updateTotalPrice(totalPrice)
+  })
 }
