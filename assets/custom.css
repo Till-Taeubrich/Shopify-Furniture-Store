@@ -192,7 +192,7 @@ header .header__inline-menu {
   justify-content: center;
 }
 
-.bullet-icon {
+.bullet-icon > img {
   width: 5rem;
   align-self: flex-start;
   filter: var(--dark-grey-filter);
@@ -303,6 +303,7 @@ left: 8%;
 	background-color: black;
   font-weight: bold;
   transition: background-color var(--transition);
+  cursor: pointer;
 }
 
 .cta-btn:hover {
@@ -360,6 +361,7 @@ left: 8%;
   border-radius: 4px;
   color: var(--dark-grey);
   padding: 1rem 2rem;
+  cursor: pointer;
 }
 
 .box-one > .header:hover,

@@ -2,9 +2,12 @@
   @media screen and (max-width: 749px) {
     .bullets-columns {
       display: block;
+      margin-left: 25%;
+      margin-right: 25%;
     }
     .bullet-item{
       margin-bottom: 3rem;
+      justify-content: left;
     }
   }
   </style>
@@ -12,28 +15,28 @@
 
 <div class="container bullets-columns">
   <div class="bullet-item">
-    <img class="bullet-icon" src="../assets/truck-check-outline.svg">
+    <div class="bullet-icon" src="/">{{ 'truck-check-outline.svg' | asset_url | img_tag }}</div>
     <div class="bullet-text">
       <h6 class="bullet-header">Free shipping</h6>
       <div class="bullet-description">Free shipping on orders over $65.</div>
     </div>
   </div>
   <div class="bullet-item">
-    <img class="bullet-icon" src="../assets/swap-horizontal-circle-outline.svg">
+    <div class="bullet-icon" src="/">{{ 'swap-horizontal-circle-outline.svg' | asset_url | img_tag }}</div>
     <div class="bullet-text">
       <h6 class="bullet-header">Free returns</h6>
       <div class="bullet-description">30-days free return policy.</div>
     </div>
   </div>
   <div class="bullet-item">
-    <img class="bullet-icon" src="../assets/shield-lock-outline.svg">
+    <div class="bullet-icon" src="/">{{ 'shield-lock-outline.svg' | asset_url | img_tag }}</div>
     <div class="bullet-text">
       <h6 class="bullet-header">Secured payments</h6>
       <div class="bullet-description">We accept all major credit cards. </div>
     </div>
   </div>
   <div class="bullet-item">
-    <img class="bullet-icon question" src="../assets/help-circle-outline.svg">
+    <div class="bullet-icon" src="/">{{ 'help-circle-outline.svg' | asset_url | img_tag }}</div>
     <div class="bullet-text">
       <h6 class="bullet-header">Customer service</h6>
       <div class="bullet-description">24/7 customer setvice.</div>
