@@ -15,78 +15,60 @@
   }
 {%- endstyle -%}
 
-<style>
-@media screen and (max-width: 749px) {
-  #Subscribe {
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    border-radius: 4px;
-    margin-top: 1rem;
-  }
-  .email-area .privacy-text{
-  margin-top: 7rem;
-  }
-}
-</style>
-
-<div class="email-area">
-  <div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
-    <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when '@app' -%}
-            {% render block %}
-          {%- when 'heading' -%}
-            <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
-          {%- when 'paragraph' -%}
-            <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-          {%- when 'email_form' -%}
-            <div {{ block.shopify_attributes }}>
-              {% form 'customer', class: 'newsletter-form' %}
-                <input type="hidden" name="contact[tags]" value="newsletter">
-                <div class="newsletter-form__field-wrapper">
-                  <div class="field">
-                    <input
-                      id="NewsletterForm--{{ section.id }}"
-                      type="email"
-                      name="contact[email]"
-                      class="field__input"
-                      value="{{ form.email }}"
-                      aria-required="true"
-                      autocorrect="off"
-                      autocapitalize="off"
-                      autocomplete="email"
-                      {% if form.errors %}
-                        autofocus
-                        aria-invalid="true"
-                        aria-describedby="Newsletter-error--{{ section.id }}"
-                      {% elsif form.posted_successfully? %}
-                        aria-describedby="Newsletter-success--{{ section.id }}"
-                      {% endif %}
-                      placeholder="{{ 'newsletter.label' | t }}"
-                      required
-                    >
-                    <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                      {{ 'newsletter.label' | t }}
-                    </label>
-                    <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                      Subscribe
-                    </button>
-                  </div>
-                  {%- if form.errors -%}
-                    <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
-                  {%- endif -%}
+<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
+  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when '@app' -%}
+          {% render block %}
+        {%- when 'heading' -%}
+          <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+        {%- when 'paragraph' -%}
+          <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+        {%- when 'email_form' -%}
+          <div {{ block.shopify_attributes }}>
+            {% form 'customer', class: 'newsletter-form' %}
+              <input type="hidden" name="contact[tags]" value="newsletter">
+              <div class="newsletter-form__field-wrapper">
+                <div class="field">
+                  <input
+                    id="NewsletterForm--{{ section.id }}"
+                    type="email"
+                    name="contact[email]"
+                    class="field__input"
+                    value="{{ form.email }}"
+                    aria-required="true"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    autocomplete="email"
+                    {% if form.errors %}
+                      autofocus
+                      aria-invalid="true"
+                      aria-describedby="Newsletter-error--{{ section.id }}"
+                    {% elsif form.posted_successfully? %}
+                      aria-describedby="Newsletter-success--{{ section.id }}"
+                    {% endif %}
+                    placeholder="{{ 'newsletter.label' | t }}"
+                    required
+                  >
+                  <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                    {{ 'newsletter.label' | t }}
+                  </label>
+                  <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+                    {% render 'icon-arrow' %}
+                  </button>
                 </div>
-                {%- if form.posted_successfully? -%}
-                  <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+                {%- if form.errors -%}
+                  <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
                 {%- endif -%}
-                {% endform %}
-                <p class="privacy-text">We respect your privacy, so we never share your info.</p>
-            </div>
-        {%- endcase -%}
-      {%- endfor -%}
-    </div>
+              </div>
+              {%- if form.posted_successfully? -%}
+                <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+              {%- endif -%}
+            {% endform %}
+          </div>
+      {%- endcase -%}
+    {%- endfor -%}
   </div>
 </div>
 
@@ -102,27 +84,27 @@
       "options": [
         {
           "value": "accent-1",
-          "label": "t:sections.newsletter.settings.color_scheme.options__1.label"
+          "label": "t:sections.all.colors.accent_1.label"
         },
         {
           "value": "accent-2",
-          "label": "t:sections.newsletter.settings.color_scheme.options__2.label"
+          "label": "t:sections.all.colors.accent_2.label"
         },
         {
           "value": "background-1",
-          "label": "t:sections.newsletter.settings.color_scheme.options__3.label"
+          "label": "t:sections.all.colors.background_1.label"
         },
         {
           "value": "background-2",
-          "label": "t:sections.newsletter.settings.color_scheme.options__4.label"
+          "label": "t:sections.all.colors.background_2.label"
         },
         {
           "value": "inverse",
-          "label": "t:sections.newsletter.settings.color_scheme.options__5.label"
+          "label": "t:sections.all.colors.inverse.label"
         }
       ],
       "default": "background-1",
-      "label": "t:sections.newsletter.settings.color_scheme.label"
+      "label": "t:sections.all.colors.label"
     },
     {
       "type": "checkbox",

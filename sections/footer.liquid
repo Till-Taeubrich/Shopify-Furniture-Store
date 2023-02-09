@@ -51,7 +51,7 @@
         -%}
         <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
-            <div class="footer-block grid__item{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+            <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
                 <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
@@ -62,7 +62,7 @@
                     {{ block.settings.subtext }}
                   </div>
                 {%- when 'link_list' -%}
-                  {%- if block.settings.menu != blank and block.settings.heading != blank -%}
+                  {%- if block.settings.menu != blank -%}
                     <ul class="footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}
                         <li>
@@ -76,9 +76,9 @@
                 {%- when 'image' -%}
                   <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
                     {%- if block.settings.image != blank -%}
-                      {%- assign image_size = block.settings.image_width | append: 'x' -%}
+                      {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
                       <img
-                        srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
+                        srcset= "{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
                         src="{{ block.settings.image | image_url: width: 400 }}"
                         alt="{{ block.settings.image.alt | escape }}"
                         loading="lazy"
@@ -224,7 +224,7 @@
     </div>
   {%- endif -%}
 
-  <div class="footer__content-bottom" style="padding-top: 0;">
+  <div class="footer__content-bottom">
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
@@ -331,6 +331,7 @@
         {%- endif -%}
         <div class="footer__copyright caption">
           <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
+          <small class="copyright__content">{{ powered_by_link }}</small>
         </div>
       </div>
     </div>
@@ -401,8 +402,7 @@
           "type": "text",
           "id": "heading",
           "default": "Quick links",
-          "label": "t:sections.footer.blocks.link_list.settings.heading.label",
-          "info": "t:sections.footer.blocks.link_list.settings.heading.info"
+          "label": "t:sections.footer.blocks.link_list.settings.heading.label"
         },
         {
           "type": "link_list",
@@ -480,27 +480,27 @@
       "options": [
         {
           "value": "accent-1",
-          "label": "t:sections.footer.settings.color_scheme.options__1.label"
+          "label": "t:sections.all.colors.accent_1.label"
         },
         {
           "value": "accent-2",
-          "label": "t:sections.footer.settings.color_scheme.options__2.label"
+          "label": "t:sections.all.colors.accent_2.label"
         },
         {
           "value": "background-1",
-          "label": "t:sections.footer.settings.color_scheme.options__3.label"
+          "label": "t:sections.all.colors.background_1.label"
         },
         {
           "value": "background-2",
-          "label": "t:sections.footer.settings.color_scheme.options__4.label"
+          "label": "t:sections.all.colors.background_2.label"
         },
         {
           "value": "inverse",
-          "label": "t:sections.footer.settings.color_scheme.options__5.label"
+          "label": "t:sections.all.colors.inverse.label"
         }
       ],
       "default": "background-1",
-      "label": "t:sections.footer.settings.color_scheme.label"
+      "label": "t:sections.all.colors.label"
     },
     {
       "type": "header",
